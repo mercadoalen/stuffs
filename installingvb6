@@ -1,0 +1,41 @@
+Prerequisites:
+You need to do this stuff first:
+Turn off UAC.
+Create a zero-byte file in C:\Windows called MSJAVA.DLL. The setup process will look for this file, and if it doesn't find it, will force an installation of old, old Java, and require a reboot. By creating the zero-byte file, the installation of moldy Java is bypassed, and no reboot will be required.
+Install DirectX 7. The process and files are available here.
+Install VB6 Common Controls, available here.
+Main Installation:
+Insert Visual Studio 6 CD.
+Exit from the Autorun setup.
+Browse to the root folder of the VS6 CD.
+Right-click SETUP.EXE, select Run As Administrator.
+On this and other Program Compatibility Assistant warnings, click Run Program.
+Click Next.
+Click "I accept agreement", then Next.
+Enter name and company information, click Next.
+Select Custom Setup, click Next.
+Click Continue, then Ok.
+Setup will "think to itself" for about 2 minutes. Processing can be verified by starting Task Manager, and checking the CPU usage of ACMSETUP.EXE.
+On the options list, select the following:
+Microsoft Visual Basic 6.0
+ActiveX
+Data Access
+Graphics
+All other options should be unchecked. Click Continue, setup will continue.
+Finally, a successful completion dialog will appear, at which click Ok. At this point, Visual Basic 6 is installed.
+If you do not have the MSDN CD, clear the checkbox on the next dialog, and click next. You'll be warned of the lack of MSDN, but just click Yes to accept.
+Click Next to skip the installation of Installshield. This is a really old version you don't want anyway.
+Click Next again to skip the installation of BackOffice, VSS, and SNA Server. Not needed!
+On the next dialog, clear the checkbox for "Register Now", and click Finish.
+IDE Compatibility Setup
+In order to prevent weird behavior of the IDE, such as sluggishness and/or lack of control placement/resizing outlines, you'll want to change these items.
+Using Windows Explorer, browse the location where you installed VB6. By default, the path is C:\Program Files\Microsoft Visual Studio\VB98\
+Right click the VB6.exe program file, and select properties from the context menu.
+Click on the Compatibility tab.
+Place a check in each of these checkboxes:
+Run this program in compatibility mode for Windows XP (Service Pack 3)
+Disable Visual Themes
+Disable Desktop Composition
+Disable display scaling on high DPI settings
+Service Pack 6 Installation:
+No magic here. You can acquire SP6 here.
