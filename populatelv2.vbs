@@ -1,7 +1,7 @@
 Function load_data()
 Set rs = Nothing
 ListView1.ListItems.clear
-InPconn "select * from table1"
+rsconn "select * from table1"
 
 With rs
     If .RecordCount Then
